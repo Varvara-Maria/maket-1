@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+
+.header {
+    width: 100%;
+    padding-top: 10px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between; /*разместились по разным углам*/
+    align-items: center;
+}
+
+.intro {
+    
+    margin-top: 50px;
+    background: url("../maket\ 1/1.jpg") center no-repeat;
+}
+
+.time {
+    margin: 50px 0 40px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between; /*разместились по разным углам*/
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.info_inner {
+    padding: 20px;
+}
+
+.place {
+    display: flex;
+    justify-content: space-between; /*разместились по разным углам*/
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.parters_text {
+    display: flex;
+}
+
+
+.phone{
+    text-align: center;
+}
+
+.phone_under_text_button {
+    margin: 50px 0 10px;
+}
+
+.phobe_button {
+    margin-bottom: 60px;
+    padding: 10px;
+}
+
+.client {
+    text-align: center;
+}
+
+.client_title {
+    margin: 30px;
+}
+
+.client_text {
+    margin: 10px;
+}
+
+.cient_text_ender {
+    margin: 20px 0 60px;
+    font-size: 10px;
+}
+
+.plan {
+    padding: 30px;
+    display: flex;
+}
+
+.subscribe {
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+}
+
+.footer_inner {
+    width: 50%;
+}
+
+.footer_right {
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.under_footer_intro {
+    display: flex;
+    width: 100%;
+}
+
+.under_footer_1 {
+    width: 50%;
+}
+
+.under_footer_2 {
+    width: 50%;
+}

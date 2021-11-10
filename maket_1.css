@@ -13,11 +13,12 @@ body {
     padding: 0 30px;
 }
 
+/* Header */
 
 .header {
     width: 100%;
     padding-top: 10px;
-
+    padding-bottom: 10px;
     position: absolute;
     top: 0;
     left: 0;
@@ -25,17 +26,102 @@ body {
     z-index: 1000;
 }
 
-.menu{
+.header_inner {
     display: flex;
-    justify-content: space-between; /*разместились по разным углам*/
+}
+
+.menu_burger {
+    padding: 5px;
+}
+
+.burger {
+    display: block;
+    cursor: pointer;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+}
+
+.menu_block_1{
+    display: flex;
     align-items: center;
 }
 
+.menu_block_1 a {
+    padding-left: 30px;
+    text-decoration: none;
+    color: #000;
+}
+
+.logo {
+    margin-right: 300px;
+    margin-left: 300px;
+}
+
+.menu_block_2{
+    display: flex;
+    align-items: center;
+}
+
+.menu_block_2 a {
+    padding-right: 30px;
+    text-decoration: none;
+    color: #000;
+}
+
+.btn {
+    border-radius: 40px;
+    background-color: #000;
+    color:#fff;
+    border: none;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+/* Intro*/
+
 .intro {
-    
     margin-top: 50px;
     background: url("../maket\ 1/1.jpg") center no-repeat;
 }
+
+.intro__inner {
+    text-align: center;
+}
+
+.intro__suptitle {
+    padding-top: 30px;
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+.intro__title {
+    width: 600px;
+    text-align: center;
+    padding-left: 330px;
+    display: block;
+}
+
+.btn_intro {
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid rgb(160, 158, 158) ;
+    padding-left: 25px;
+    padding-right: 25px;
+    cursor: pointer;
+}
+
+.img_intro {
+    display: block;
+    align-items: center;
+    padding-left: 520px;
+    margin-top: 30px;
+}
+
+/* Time */
 
 .time {
     margin: 50px 0 40px;
@@ -44,6 +130,22 @@ body {
     justify-content: space-between;
 }
 
+.time_inner {
+    padding: 20px;
+    width: 50%;
+}
+
+.time_inner i {
+    font-size: 30px;
+    color: rgb(109, 142, 231);
+}
+
+.time_title p {
+    font-size: 30px;
+}
+
+/* Info */
+
 .info {
     display: flex;
     justify-content: space-between; /*разместились по разным углам*/
@@ -51,9 +153,52 @@ body {
     margin-bottom: 50px;
 }
 
-.info_inner {
-    padding: 20px;
+.img_info {
+    display: block;
+    margin-left: -150px;
 }
+
+.info_inner {
+    padding-left: 40px;
+}
+
+.info_title {
+    font-size: 30px;
+}
+
+.info_text {
+    margin-bottom: 20px;
+}
+
+.info_btn_1 {
+    border-radius: 40px;
+    border: none;
+    background-color: rgb(109, 142, 231);
+    color: #fff;
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.info_btn_1 i {
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+.info_btn_2 {
+    border-radius: 40px;
+    border: 1px solid rgb(160, 158, 158) ;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+/* Place */
 
 .place {
     display: flex;
@@ -62,34 +207,184 @@ body {
     margin-bottom: 50px;
 }
 
+.place_title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.partner {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+
 .parters_text {
     display: flex;
 }
 
+.place_text_after_1 {
+    color: rgb(109, 142, 231);
+    margin-right: 20px;
+}
+
+.place_text_after_2 {
+    color: rgb(109, 231, 150);
+    font-size: 15px;
+}
+
+.place_text_after_2 i {
+    color: rgb(142, 151, 175);
+}
+
+.img_place {
+    display: block;
+    margin-right: -150px;
+}
+
+/* Phone */
 
 .phone{
     text-align: center;
 }
 
+.phone_title {
+    font-size: 30px;
+}
+
+.line {
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: rgb(109, 142, 231);
+    margin-left: 610px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.phone_text {
+    font-size: 10px;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.phone_under_title {
+    margin-top: 80px;
+    font-size: 10px;
+    color: gray;
+}
+
+.phone_under_text {
+    font-size: 30px;
+}
+
+.subscribe_input {
+    margin-top: 30px;
+    width: 180px;
+    height: 20px;
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    border-right: 0;
+    border-radius: 40px;
+
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.1;
+    font-size: 13px;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+
+    padding: 12px;
+}
+
+.subscribe_input:focus {
+    outline: 0;
+    border-color: green;
+}
+
+.subscribe_input::placeholder {
+    color: #ccc;
+}
+
+.subscribe_button {
+    width: 140px;
+    height: 40px;
+    border-radius: 40px;
+
+    padding: 12px 30px;
+    background-color: green;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.1;
+    font-size: 10px;
+    text-transform: uppercase;
+
+    transition: background .2s linear;
+}
+
+.subscribe_button:hover {
+    background-color: #22b12a;
+}
+
+.subscribe_button:focus {
+    outline: 0;
+}
+
+
 .phone_under_text_button {
     margin: 50px 0 10px;
 }
 
-.phobe_button {
+.phone_button {
     margin-bottom: 60px;
     padding: 10px;
+    padding-left: 20px;
+    padding-right: 25px;
+    background-color: black; 
+    color: #fff;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    margin-left: 560px;
 }
+
+.phone_button i {
+    font-size: 25px;
+    margin-right: 8px;    
+}
+
+.phone_button_text_1 {
+    font-size: 10px;
+}
+
+.phobe_button_text_2 {
+    font-size: 15px;
+    margin: 0;
+}
+
+/* Client */
 
 .client {
     text-align: center;
 }
 
+.img_client {
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+
 .client_title {
-    margin: 30px;
+    font-size: 20px;
+    margin: 20px;
 }
 
 .client_text {
     margin: 10px;
+    width: 300px;
+    margin-left: 480px;
 }
 
 .cient_text_ender {
@@ -97,14 +392,190 @@ body {
     font-size: 10px;
 }
 
+.img_client {
+    margin-bottom: 15px;
+}
+
+.cient_text_ender {
+    font-size: 8px;
+}
+
+/* Plan */
+
 .plan {
     padding: 30px;
     display: flex;
+} 
+
+.plan_inner {
+    width: 33%;
+    margin-right: 70px;
 }
 
-.subscribe {
-    text-align: center;
+.plan_title {
+    font-size: 30px;
 }
+
+.plan_after_title {
+    font-size: 13px;
+    margin: 20px 0;
+}
+
+.plan_btn_1 {
+    border-radius: 40px;
+    border: 2px solid gray;
+    background-color: #fff;
+    padding: 3px 10px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.plan_btn_2 {
+    border-radius: 40px;
+    border: 2px solid gray;
+    background-color: rgb(214, 211, 211);
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+.plan_text {
+    color: grey;
+    margin: 10px 0;
+}
+
+.plan_after_text {
+    color: grey;
+    margin-top: 40px;
+}
+
+.plan_after_text a {
+    color: rgb(151, 195, 245);
+    text-decoration: none;
+}
+
+.plan_starter {
+    height: 400px;
+    width: 300px;
+    background-color: rgb(228, 226, 226);
+}
+
+.plan_starter_carcas {
+    margin-top: 35px;
+}
+
+.plan_starter_header {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.plan_starter_btn_1 {
+    border: 2px solid rgb(131, 127, 127);
+    border-radius: 30px;
+    font-size: 10px;
+    padding: 3px 13px;
+    cursor: pointer;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.plan_starter_subtitle {
+    font-size: 17px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.fa-check  {
+    color: rgb(45, 192, 65);
+    margin-right: 5px;
+}
+
+.plan_starter_text {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.plan_starter_btn_2 {
+    width: 150px;
+    cursor: pointer;
+    margin: 50px 75px;
+    border: none;
+    color: #fff;
+    background-color: rgb(45, 55, 187);
+    border-radius: 40px;
+    padding: 10px 10px;
+    
+}
+
+.plan_pro {
+    height: 370px;
+    width: 270px;
+    margin-top: 17px;
+    background-color: rgb(165, 160, 160);
+}
+
+.plan_pro_header {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.plan_pro_btn_1 {
+    border: 2px solid rgb(131, 127, 127);
+    background-color: rgb(165, 160, 160);
+    border-radius: 30px;
+    font-size: 10px;
+    padding: 3px 13px;
+    cursor: pointer;
+    margin-left: 110px;
+    margin-top: 20px;
+}
+
+.plan_pro_subtitle {
+    font-size: 17px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.fa-check  {
+    color: rgb(45, 192, 65);
+    margin-right: 5px;
+}
+
+.plan_pro_text {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.plan_pro_btn_2 {
+    width: 150px;
+    cursor: pointer;
+    margin: 30px 60px;
+    border: 3px solid rgb(45, 55, 187);
+    color: rgb(45, 55, 187);
+    background-color: rgb(165, 160, 160);
+    border-radius: 40px;
+    padding: 5px 0;
+    
+}
+
+/* Subscribe */
+
+.subscribe {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+} 
+
+.subscribe_under_text {
+    font-size: 10px;
+    color: grey;
+    margin-bottom: 120px;
+}
+
+/* Footer */
 
 .footer {
     display: flex;
@@ -115,9 +586,70 @@ body {
     width: 50%;
 }
 
+.footer_left_text {
+    font-size: 10px;
+    color: grey;
+    margin-top: 20px;
+}
+
+.footer_button {
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 25px;
+    background-color: black; 
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+
+}
+
+.footer_button i {
+    font-size: 25px;
+    margin-right: 8px;    
+}
+
+.footer_button_text_1 {
+    font-size: 10px;
+}
+
+.footer_button_text_2 {
+    font-size: 15px;
+    margin: 0;
+}
+
+.icon i {
+    margin-top: 15px;
+    width: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 100px;
+    color: grey;
+}
+
 .footer_right {
-    flex-wrap: wrap;
+    display: flex;
     width: 50%;
+}
+
+.footer_first {
+    margin-right: 80px;
+}
+
+.footer_second {
+    margin-right: 80px;
+}
+
+.footer_right_title {
+    font-size: 13px;
+}
+
+.footer_right_text {
+    font-size: 12px;
+    color: grey;
+    margin-top: 5px;
 }
 
 .under_footer_intro {

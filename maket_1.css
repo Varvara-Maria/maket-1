@@ -218,21 +218,21 @@ body {
     font-size: 10px;
 }
 
-.parters_text {
+.partner_icon {
     display: flex;
 }
 
-.place_text_after_1 {
+.partner_text_1 {
     color: rgb(109, 142, 231);
     margin-right: 20px;
 }
 
-.place_text_after_2 {
-    color: rgb(109, 231, 150);
+.partner_text_2 {
+    color: rgb(86, 212, 128);
     font-size: 15px;
 }
 
-.place_text_after_2 i {
+.partner_text_2 i {
     color: rgb(142, 151, 175);
 }
 
@@ -333,7 +333,7 @@ body {
 }
 
 
-.phone_under_text_button {
+.phone_down {
     margin: 50px 0 10px;
 }
 
@@ -396,8 +396,9 @@ body {
     margin-bottom: 15px;
 }
 
-.cient_text_ender {
+.client_footer {
     font-size: 8px;
+    margin-bottom: 80px;
 }
 
 /* Plan */
@@ -416,7 +417,7 @@ body {
     font-size: 30px;
 }
 
-.plan_after_title {
+.plan_under_title {
     font-size: 13px;
     margin: 20px 0;
 }
@@ -443,7 +444,7 @@ body {
     margin: 10px 0;
 }
 
-.plan_after_text {
+.plan_under_text {
     color: grey;
     margin-top: 40px;
 }

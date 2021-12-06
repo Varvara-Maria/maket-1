@@ -11,11 +11,12 @@ body {
     max-width: 1260px;
     margin: 0 auto;
     padding: 0 30px;
+    height: auto;
 }
 
 /* Header */
 
-.header {
+header {
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -26,11 +27,11 @@ body {
     z-index: 1000;
 }
 
-.header_inner {
+.header__inner {
     display: flex;
 }
 
-.menu_burger {
+.menu__burger {
     padding: 5px;
 }
 
@@ -43,12 +44,12 @@ body {
     margin: 3px 0;
 }
 
-.menu_block_1{
+.menu__block__left{
     display: flex;
     align-items: center;
 }
 
-.menu_block_1 a {
+.menu__block__left a {
     padding-left: 30px;
     text-decoration: none;
     color: #000;
@@ -59,12 +60,12 @@ body {
     margin-left: 300px;
 }
 
-.menu_block_2{
+.menu__block__right {
     display: flex;
     align-items: center;
 }
 
-.menu_block_2 a {
+.menu__block__right a {
     padding-right: 30px;
     text-decoration: none;
     color: #000;
@@ -105,7 +106,7 @@ body {
     display: block;
 }
 
-.btn_intro {
+.btn__intro {
     padding: 10px;
     border-radius: 30px;
     border: 1px solid rgb(160, 158, 158) ;
@@ -114,7 +115,7 @@ body {
     cursor: pointer;
 }
 
-.img_intro {
+.img__intro {
     display: block;
     align-items: center;
     padding-left: 520px;
@@ -124,23 +125,23 @@ body {
 /* Time */
 
 .time {
-    margin: 50px 0 40px;
+    margin: 50px 0 40px 100px;
     align-items: center;
     display: flex;
     justify-content: space-between;
 }
 
-.time_inner {
+.time__inner {
     padding: 20px;
     width: 50%;
 }
 
-.time_inner i {
+.time__inner i {
     font-size: 30px;
     color: rgb(109, 142, 231);
 }
 
-.time_title p {
+.time__title p {
     font-size: 30px;
 }
 
@@ -153,24 +154,25 @@ body {
     margin-bottom: 50px;
 }
 
-.img_info {
+.img__info {
     display: block;
     margin-left: -150px;
 }
 
-.info_inner {
-    padding-left: 40px;
+.info__inner {
+    padding-left: 100px;
 }
 
-.info_title {
+.info__title {
     font-size: 30px;
 }
 
-.info_text {
+.info__text {
+    width: 50%;;
     margin-bottom: 20px;
 }
 
-.info_btn_1 {
+.info__btn__left {
     border-radius: 40px;
     border: none;
     background-color: rgb(109, 142, 231);
@@ -181,12 +183,12 @@ body {
     cursor: pointer;
 }
 
-.info_btn_1 i {
+.info__btn__left i {
     padding-left: 20px;
     padding-right: 5px;
 }
 
-.info_btn_2 {
+.info__btn__right {
     border-radius: 40px;
     border: 1px solid rgb(160, 158, 158) ;
     background-color: rgb(255, 255, 255);
@@ -207,7 +209,7 @@ body {
     margin-bottom: 50px;
 }
 
-.place_title {
+.place__title {
     font-size: 30px;
     margin-bottom: 20px;
 }
@@ -218,25 +220,25 @@ body {
     font-size: 10px;
 }
 
-.partner_icon {
+.partner__icons {
     display: flex;
 }
 
-.partner_text_1 {
+.partner__text__left {
     color: rgb(109, 142, 231);
     margin-right: 20px;
 }
 
-.partner_text_2 {
+.partner__text__right {
     color: rgb(86, 212, 128);
     font-size: 15px;
 }
 
-.partner_text_2 i {
+.partner__text__right i {
     color: rgb(142, 151, 175);
 }
 
-.img_place {
+.img__place {
     display: block;
     margin-right: -150px;
 }
@@ -247,7 +249,7 @@ body {
     text-align: center;
 }
 
-.phone_title {
+.phone__title {
     font-size: 30px;
 }
 
@@ -261,23 +263,23 @@ body {
     margin-bottom: 20px;
 }
 
-.phone_text {
+.phone__subtitle {
     font-size: 10px;
     color: gray;
     margin-bottom: 30px;
 }
 
-.phone_under_title {
+.phone__title_after {
     margin-top: 80px;
     font-size: 10px;
     color: gray;
 }
 
-.phone_under_text {
+.phone__text_after {
     font-size: 30px;
 }
 
-.subscribe_input {
+.subscribe__input {
     margin-top: 30px;
     width: 180px;
     height: 20px;
@@ -296,16 +298,16 @@ body {
     padding: 12px;
 }
 
-.subscribe_input:focus {
+.subscribe__input:focus {
     outline: 0;
     border-color: green;
 }
 
-.subscribe_input::placeholder {
+.subscribe__input::placeholder {
     color: #ccc;
 }
 
-.subscribe_button {
+.subscribe__button {
     width: 140px;
     height: 40px;
     border-radius: 40px;
@@ -324,20 +326,20 @@ body {
     transition: background .2s linear;
 }
 
-.subscribe_button:hover {
+.subscribe__button:hover {
     background-color: #22b12a;
 }
 
-.subscribe_button:focus {
+.subscribe__button:focus {
     outline: 0;
 }
 
 
-.phone_down {
+.phone__info {
     margin: 50px 0 10px;
 }
 
-.phone_button {
+.phone__button {
     margin-bottom: 60px;
     padding: 10px;
     padding-left: 20px;
@@ -351,16 +353,16 @@ body {
     margin-left: 560px;
 }
 
-.phone_button i {
+.phone__button i {
     font-size: 25px;
     margin-right: 8px;    
 }
 
-.phone_button_text_1 {
+.phone__button__intro {
     font-size: 10px;
 }
 
-.phobe_button_text_2 {
+.phone__button__add {
     font-size: 15px;
     margin: 0;
 }
@@ -371,32 +373,23 @@ body {
     text-align: center;
 }
 
-.img_client {
+.img__client {
     margin-bottom: 15px;
     margin-top: 40px;
 }
 
-.client_title {
+.client__title {
     font-size: 20px;
     margin: 20px;
 }
 
-.client_text {
+.client__intro {
     margin: 10px;
     width: 300px;
     margin-left: 480px;
 }
 
-.cient_text_ender {
-    margin: 20px 0 60px;
-    font-size: 10px;
-}
-
-.img_client {
-    margin-bottom: 15px;
-}
-
-.client_footer {
+.client__footer {
     font-size: 8px;
     margin-bottom: 80px;
 }
@@ -408,21 +401,22 @@ body {
     display: flex;
 } 
 
-.plan_inner {
+.plan__inner {
     width: 33%;
     margin-right: 70px;
 }
 
-.plan_title {
+.plan__title {
     font-size: 30px;
 }
 
-.plan_under_title {
+.plan__subtitle {
     font-size: 13px;
     margin: 20px 0;
 }
 
-.plan_btn_1 {
+.plan__btn__left, 
+.plan__btn__right {
     border-radius: 40px;
     border: 2px solid gray;
     background-color: #fff;
@@ -431,46 +425,34 @@ body {
     cursor: pointer;
 }
 
-.plan_btn_2 {
-    border-radius: 40px;
-    border: 2px solid gray;
-    background-color: rgb(214, 211, 211);
-    padding: 3px 10px;
-    cursor: pointer;
-}
-
-.plan_text {
+.plan__intro {
     color: grey;
     margin: 10px 0;
 }
 
-.plan_under_text {
+.plan__subintro {
     color: grey;
     margin-top: 40px;
 }
 
-.plan_after_text a {
-    color: rgb(151, 195, 245);
-    text-decoration: none;
-}
 
-.plan_starter {
+.plan__starter {
     height: 400px;
     width: 300px;
     background-color: rgb(228, 226, 226);
 }
 
-.plan_starter_carcas {
+.starter__carcas {
     margin-top: 35px;
 }
 
-.plan_starter_header {
+.starter__header {
     font-size: 28px;
     text-align: center;
     margin-top: 20px;
 }
 
-.plan_starter_btn_1 {
+.starter__btn {
     border: 2px solid rgb(131, 127, 127);
     border-radius: 30px;
     font-size: 10px;
@@ -480,7 +462,7 @@ body {
     margin-top: 20px;
 }
 
-.plan_starter_subtitle {
+.starter__subtitle {
     font-size: 17px;
     text-align: center;
     margin-top: 20px;
@@ -492,12 +474,12 @@ body {
     margin-right: 5px;
 }
 
-.plan_starter_text {
+.starter__intro {
     text-align: center;
     margin-top: 10px;
 }
 
-.plan_starter_btn_2 {
+.starter__btn__down {
     width: 150px;
     cursor: pointer;
     margin: 50px 75px;
@@ -509,20 +491,20 @@ body {
     
 }
 
-.plan_pro {
+.plan__pro {
     height: 370px;
     width: 270px;
     margin-top: 17px;
     background-color: rgb(165, 160, 160);
 }
 
-.plan_pro_header {
+.pro__header {
     font-size: 28px;
     text-align: center;
     margin-top: 20px;
 }
 
-.plan_pro_btn_1 {
+.pro__btn {
     border: 2px solid rgb(131, 127, 127);
     background-color: rgb(165, 160, 160);
     border-radius: 30px;
@@ -533,7 +515,7 @@ body {
     margin-top: 20px;
 }
 
-.plan_pro_subtitle {
+.pro__subtitle {
     font-size: 17px;
     text-align: center;
     margin-top: 20px;
@@ -545,12 +527,12 @@ body {
     margin-right: 5px;
 }
 
-.plan_pro_text {
+.pro__intro {
     text-align: center;
     margin-top: 10px;
 }
 
-.plan_pro_btn_2 {
+.pro__btn__down {
     width: 150px;
     cursor: pointer;
     margin: 30px 60px;
@@ -570,7 +552,7 @@ body {
     margin-bottom: 20px;
 } 
 
-.subscribe_under_text {
+.subscribe__quote {
     font-size: 10px;
     color: grey;
     margin-bottom: 120px;
@@ -583,17 +565,17 @@ body {
     width: 100%;
 }
 
-.footer_inner {
+.footer__inner {
     width: 50%;
 }
 
-.footer_left_text {
+.footer .left__tittle {
     font-size: 10px;
     color: grey;
     margin-top: 20px;
 }
 
-.footer_button {
+.footer .button {
     margin-top: 20px;
     padding: 10px;
     padding-left: 20px;
@@ -607,21 +589,26 @@ body {
 
 }
 
-.footer_button i {
+.foote .button i {
     font-size: 25px;
     margin-right: 8px;    
 }
 
-.footer_button_text_1 {
+.footer .button__intro {
     font-size: 10px;
 }
 
-.footer_button_text_2 {
+.footer .button__intro_down {
     font-size: 15px;
     margin: 0;
 }
 
-.icon i {
+ footer .button .fab {
+    font-size: 25px;
+    margin-right: 8px;
+}
+
+.icons i {
     margin-top: 15px;
     width: 30px;
     text-transform: uppercase;
@@ -630,38 +617,34 @@ body {
     color: grey;
 }
 
-.footer_right {
+footer .footer__right {
     display: flex;
     width: 50%;
 }
 
-.footer_first {
+footer .footer__right .first, .second, .third{
     margin-right: 80px;
 }
 
-.footer_second {
-    margin-right: 80px;
-}
-
-.footer_right_title {
+footer .footer__right .title {
     font-size: 13px;
+    background-color: none;
 }
 
-.footer_right_text {
+footer .footer__right .footer__intro {
+    background-color: none;
     font-size: 12px;
     color: grey;
     margin-top: 5px;
+    cursor: pointer;
 }
 
-.under_footer_intro {
+.end {
     display: flex;
     width: 100%;
 }
 
-.under_footer_1 {
+.end__first {
     width: 50%;
-}
-
-.under_footer_2 {
-    width: 50%;
+    font-size: 10px;
 }
